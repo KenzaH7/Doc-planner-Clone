@@ -1,0 +1,215 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: #747474;
+}
+header {
+  background: hsla(0, 0%, 100%, 0.98);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.logo img {
+  height: 33px;
+  width: 268px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ababab;
+  padding: 8px 12px;
+}
+.nav-links a:hover {
+  color: #00b39b;
+}
+.dropdown-content {
+  display: none;
+  padding: 20px;
+  position: absolute;
+  background-color: #fff;
+  min-width: 220px;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  z-index: 1;
+  margin-left: -100px;
+}
+.dropdown-content li {
+  list-style: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+}
+.lead_section {
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 120px auto 3.75rem; /* Adding top margin to accommodate fixed header */
+  text-align: center;
+  display: block;
+}
+
+.lead_logo {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.lead_section h1 {
+  text-align: center;
+  font-size: 2.125rem;
+  color: #00b39b;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 50px;
+}
+
+.lead_section p {
+  margin: 0.8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.section__inner {
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  column-gap: 10px;
+}
+
+.services__item {
+  border-radius: 10px;
+  padding: 2em 2em 0;
+  overflow: hidden;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease 0s;
+}
+.services__item img {
+  height: 30px;
+}
+
+.services__item--marketplace {
+  background: #00ccb1;
+}
+.services__item h1 {
+  font-size: 1.625em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.3em 0;
+}
+.services__item h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+}
+
+.services .style-select:last-child {
+  margin-bottom: 35px;
+}
+
+.services .style-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.services .style-select select {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.services .style-select select option {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #333;
+}
+
+.services__item--saas {
+  background: #3d83df;
+}
+
+.services__item--clinics {
+  background: #1b2734;
+}
+
+.brand {
+  display: flex;
+  margin: 2.5rem auto 3.125rem;
+}
+.brands__logos {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+  list-style: none;
+  width: 67%;
+}
+.brands__logos li {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0;
+  padding: 5px 0 5px 5px;
+  width: 25%;
+}
+.brands__logos .tuotempo img {
+  height: 16px;
+}
+.brands__logos .gipo img,
+.brands__logos .mydr img {
+  height: 34px;
+}
+.brands__logos a svg {
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+}
